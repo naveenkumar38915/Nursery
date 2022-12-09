@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('git repo and clean') {
             steps {
-                bat  "rmdir /s /q   Nursery-Backend"
+               // bat  "rmdir /s /q   Nursery-Backend"
                 bat "git clone https://github.com/naveenkumar38915/Nursery.git"
                 bat "mvn clean -f Nursery-Backend"
             }
